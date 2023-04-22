@@ -22,8 +22,8 @@ int _puts(char *s)
 
 	if (!s)
 	{
-		i+= write(1, "(null)", 6);
-		return (6);
+		_putchar('\0');
+		return (1);
 	}
 
 	while (*(s + i) != '\0')
