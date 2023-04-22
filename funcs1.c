@@ -32,7 +32,7 @@ int _puts(char *s)
 		i++;
 	}
 
-	return (i);
+	return (i + 1);
 }
 
 
