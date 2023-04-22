@@ -24,6 +24,8 @@ int helper(char c, va_list args, int count)
 	case 'i':
 		count += print_int(va_arg(args, int));
 		break;
+	case '\0':
+		return (-1);
 	default:
 		count += _putchar(c);
 		break;
