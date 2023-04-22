@@ -53,7 +53,7 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			count += helper(*format, args, count);
+			count = helper(*format, args, count);
 		}
 		else
 		{
