@@ -25,17 +25,14 @@ int _puts(char *s)
 		return (6);
 	}
 
-	/**
-	  *while (*(s + i) != '\0')
-	*{
+	
+	while (*(s + i) != '\0')
+	{
 		_putchar(*(s + i));
 		i++;
 	}
-	*/
 
-	return (write(1, s, _strlen(s)));
-
-	/**return (i);*/
+	return (i);
 }
 
 
