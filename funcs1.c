@@ -18,21 +18,23 @@ int _putchar (char c)
 
 int _puts(char *s)
 {
-	int  i = 0;
 
 	if (!s)
 	{
 		write(1, "(null)", 6);
-		return(-1);
+		return (6);
 	}
 
-	while (*(s + i) != '\0')
+	return (write(1, s, _strlen(s)));
+
+	/**
+	 * while (*(s + i) != '\0')
 	{
 		_putchar(*(s + i));
 		i++;
-	}
-
-	return (i);
+		}
+		return (i);
+	*/
 }
 
 
