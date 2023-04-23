@@ -9,6 +9,7 @@
  */
 int helper(char c, va_list args, int count)
 {
+
 	switch (c)
 	{
 	case 'c':
