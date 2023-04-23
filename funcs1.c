@@ -7,7 +7,8 @@
  */
 int _putchar (char c)
 {
-	return (write(1, &c, 1));
+	write(1, &c, 1);
+	return (1);
 }
 
 /**
@@ -25,10 +26,9 @@ int _puts(char *s)
 		write(1, "(null)", 6);
 		return (6);
 	}
-	while (*s)
+	while (s[i])
 	{
-		_putchar(*s);
-		s++;
+		_putchar(s[i]);
 		i++;
 	}
 	return (i);
