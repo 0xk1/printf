@@ -72,10 +72,10 @@ int print_int(int n)
  * Return: number of bytes written
  */
 
-int print_binary(int n)
+int print_binary(unsigned int n)
 {
 	int i = 0, j, r;
-	char arr[32];
+	char arr[64];
 
 	if (n == 0)
 	{
