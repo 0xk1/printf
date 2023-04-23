@@ -23,12 +23,12 @@ int _puts(char *s)
 	if (!s)
 	{
 		write(1, "(null)", 6);
-		return (5);
+		return (6);
 	}
-
-	while (*(s + i) != '\0')
+	while (*s)
 	{
-		_putchar(*(s + i));
+		_putchar(*s);
+		s++;
 		i++;
 	}
 	return (i);
