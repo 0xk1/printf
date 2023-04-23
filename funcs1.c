@@ -75,7 +75,7 @@ int print_int(int n)
 int print_binary(int n)
 {
 	int i = 0, j, r;
-	char arr[1000];
+	char arr[];
 
 	if (n == 0)
 	{
@@ -92,7 +92,7 @@ int print_binary(int n)
 	}
 
 	j = i - 1;
-	while (j > 0)
+	while (j >= 0)
 	{
 		_putchar(arr[j] + '0');
 		j--;
