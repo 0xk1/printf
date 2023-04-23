@@ -13,5 +13,6 @@ int _printf(const char *format, ...);
 int helper(char c, va_list args, int count);
 int print_binary(unsigned int n);
 int print_unsd(unsigned int n);
+int _strlen(char *s);
 
 #endif

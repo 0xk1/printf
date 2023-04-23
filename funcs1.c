@@ -18,7 +18,6 @@ int _putchar (char c)
 
 int _puts(char *s)
 {
-	int i = 0;
 
 	if (!s)
 	{
@@ -34,7 +33,7 @@ int _puts(char *s)
 	}
 	*/
 
-	return (write(1, s, _strlen(str)));
+	return (write(1, s, _strlen(s)));
 
 	/**return (i);*/
 }
