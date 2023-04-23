@@ -68,7 +68,7 @@ int print_int(int n)
 }
 /**
  * print_binary - function that print the binary of a decimal
- * @n - the number
+ * @n: the number
  * Return: number of bytes written
  */
 
