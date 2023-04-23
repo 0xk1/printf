@@ -33,6 +33,7 @@ int helper(char c, va_list args, int count)
 	case '\0':
 		return (-1);
 	default:
+		count += _putchar('%');
 		count += _putchar(c);
 		break;
 	}

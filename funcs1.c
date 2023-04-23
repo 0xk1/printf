@@ -18,6 +18,7 @@ int _putchar (char c)
 
 int _puts(char *s)
 {
+	int  i = 0;
 
 	if (!s)
 	{
