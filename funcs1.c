@@ -26,7 +26,6 @@ int _puts(char *s)
 		return (6);
 	}
 
-	
 	while (*(s + i) != '\0')
 	{
 		_putchar(*(s + i));
