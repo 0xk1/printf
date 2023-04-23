@@ -66,3 +66,32 @@ int print_int(int n)
 	return (i);
 
 }
+/**
+ * print_binary - function that print the binary of a decimal
+ * @n - the number
+ * Return: number of bytes written
+ */
+
+int print_binary(int n)
+{
+	int i = 0, j, r;
+	char arr[32];
+
+	while (n)
+	{
+		r = n % 2;
+		n = n / 2;
+		arr[i] = r;
+		i++;
+	}
+
+	j = i - 1;
+	while (j > 0)
+	{
+		_putchar(arr[j] + '0');
+		j--;
+	}
+	return (i);
+}
+
+

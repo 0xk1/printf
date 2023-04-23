@@ -24,6 +24,9 @@ int helper(char c, va_list args, int count)
 	case 'i':
 		count += print_int(va_arg(args, int));
 		break;
+	case 'b':
+		count += print_binary(va_arg(args, int));
+		break;
 	case '\0':
 		return (-1);
 	default:
@@ -63,7 +66,7 @@ int _printf(const char *format, ...)
 		}
 
 		format++;
-		va_end(args);
 	}
+	va_end(args);
 	return (count);
 }

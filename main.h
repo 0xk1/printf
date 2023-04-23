@@ -11,5 +11,6 @@ int _puts(char *s);
 int print_int(int n);
 int _printf(const char *format, ...);
 int helper(char c, va_list args, int count);
+int print_binary(int n);
 
 #endif
