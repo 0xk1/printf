@@ -76,7 +76,9 @@ int print_binary(int n)
 {
 	int i = 0, j, r;
 	char arr[64];
-
+	
+	if (n < 0)
+		return (-1);
 	while (n)
 	{
 		r = n % 2;
