@@ -18,6 +18,7 @@ int _putchar (char c)
 
 int _puts(char *s)
 {
+	int i = 0;
 
 	if (!s)
 	{
@@ -25,16 +26,12 @@ int _puts(char *s)
 		return (6);
 	}
 
-	return (write(1, s, _strlen(s)));
-
-	/**
-	 * while (*(s + i) != '\0')
+	while (*(s + i) != '\0')
 	{
 		_putchar(*(s + i));
 		i++;
-		}
-		return (i);
-	*/
+	}
+	return (i);
 }
 
 
