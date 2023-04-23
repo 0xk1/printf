@@ -75,7 +75,7 @@ int print_int(int n)
 int print_binary(int n)
 {
 	int i = 0, j, r;
-	char arr[1000];
+	char arr[32];
 
 	if (n == 0)
 	{
