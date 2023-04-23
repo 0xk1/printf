@@ -26,13 +26,17 @@ int _puts(char *s)
 		return (6);
 	}
 
-	while (*(s + i) != '\0')
-	{
+	/**
+	  *while (*(s + i) != '\0')
+	*{
 		_putchar(*(s + i));
 		i++;
 	}
+	*/
 
-	return (i);
+	return (write(1, s, _strlen(str)));
+
+	/**return (i);*/
 }
 
 
@@ -113,7 +117,7 @@ int print_unsd(unsigned int n)
 		i += _putchar(n + '0');
 	else
 	{
-		i += print_unsd((unsigned int)(n / 10));
+		i += print_unsd(n / 10);
 		i += print_unsd(n % 10);
 	}
 	return (i);
