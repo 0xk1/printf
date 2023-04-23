@@ -99,4 +99,25 @@ int print_binary(unsigned int n)
 	return (i);
 }
 
+/**
+ * print_unsd - print unsigned number
+ * @n: number
+ * Return: number of bytes written
+ */
+
+int print_unsd(unsigned int n)
+{
+	int i = 0;
+
+	if (n <= 9)
+		i += _putchar(n + '0');
+	else
+	{
+		i += print_unsd((unsigned int)(n / 10));
+		i += print_unsd(n % 10);
+	}
+	return (i);
+}
+
+
 

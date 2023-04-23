@@ -27,6 +27,9 @@ int helper(char c, va_list args, int count)
 	case 'b':
 		count += print_binary(va_arg(args, int));
 		break;
+	case 'u':
+		count += print_unsd(va_arg(args, unsigned int));
+		break;
 	case '\0':
 		return (-1);
 	default:
