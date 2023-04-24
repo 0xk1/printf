@@ -63,11 +63,11 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			count = helper((char)*format, args, count);
+			count = helper(*format, args, count);
 		}
 		else
 		{
-			count += _putchar((char)*format);
+			count += _putchar(*format);
 		}
 
 		format++;

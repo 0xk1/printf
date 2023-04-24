@@ -12,12 +12,23 @@ int main(void)
 	int len;
 	int len2;
 	unsigned int ui;
+	char *str = "dynamic string";
 
 	len = _printf("Let's %% %c \' tyr to printf a simple sentence.\n", "\0");
 	len2 = printf("Let's %% %c \' try to printf a simple sentence.\n", "\0");
 	_printf("Length:[%d, %i]\n", len, len);
 	ui = (unsigned int)INT_MAX + 1024;
-
+	_printf("%c\n", 'H');
+	_printf("%c\n", 65);
+	_printf("%c\n", '\n');
+	_printf("%s\n", "Hello, world!");
+	_printf("%s\n", "This is a test.");
+	_printf("%s\n", str);
+	_printf("%%\n");
+	_printf("%%%\n");
+	_printf("%c%s%%\n", 'H', "ello, world!");
+	_printf("%s\n", NULL);
+	_printf("%s\n", NULL);
 	printf("Length:[%d, %i]\n", len2, len2);
 	_printf("Negative:[%d]\n", -762534);
 	printf("Negative:[%d]\n", -762534);
