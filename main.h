@@ -15,5 +15,6 @@ int print_binary(unsigned int n);
 int print_unsd(unsigned int n);
 int _strlen(char *s);
 int print_octal(unsigned int n);
+int print_hex(unsigned int n, char base);
 
 #endif

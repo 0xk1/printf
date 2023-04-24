@@ -34,6 +34,10 @@ int helper(char c, va_list args, int count)
 	case 'o':
 		count += print_octal(va_arg(args, unsigned int));
 		break;
+	case 'x':
+	case 'X':
+		count += print_hex(va_arg(args, unsigned int), c);
+		break;
 	case '\0':
 		return (-1);
 	default:
