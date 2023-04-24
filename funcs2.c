@@ -21,7 +21,7 @@ int _strlen(char *s)
  * @base: base
  * Return: int
  */
-int dec_to_base(unsigned int n, char base)
+int dec_to_base(unsigned long int n, char base)
 {
 	int i = 0, j, r;
 	char num[64];
@@ -82,7 +82,7 @@ int print_pointer(void *p)
 
 	n = (unsigned long int)p;
 	i += _puts("0x");
-	i += dec_to_base(n, 'X');
+	i += dec_to_base(n, 'x');
 	return (i);
 }
 
