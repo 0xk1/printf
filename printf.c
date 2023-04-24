@@ -39,7 +39,7 @@ int helper(char c, va_list args, int count)
 		count += print_pointer(va_arg(args, void *));
 		break;
 	case 'r':
-		count += _rev_str(va_arg(args, void *);
+		count += _rev_str(va_arg(args, void *));
 		break;
 	default:
 		count += _putchar('%');
