@@ -13,7 +13,7 @@ int helper(char c, va_list args, int count)
 	switch (c)
 	{
 	case 'c':
-		count += _putchar(va_arg(args, int));
+		count += _putchar((char)va_arg(args, int));
 		break;
 	case 's':
 		count += _puts(va_arg(args, char*));
