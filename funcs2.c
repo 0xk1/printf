@@ -129,7 +129,7 @@ int buffer(char c)
 	}
 
 	if (c != -1)
-		beffer[i++] = c;
+		buffer[i++] = c;
 
 	return (1);
 }
