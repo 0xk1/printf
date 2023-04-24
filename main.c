@@ -39,6 +39,7 @@ int main(void)
 	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
+	_printf("Unknown:[%r]\n");
 	_printf("String:[%s]\n", "I am a string !");
 	return (0);
 }

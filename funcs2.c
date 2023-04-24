@@ -86,5 +86,25 @@ int print_pointer(void *p)
 	return (i);
 }
 
+int _rev_str(char *s)
+{
+	int i = 0;
+	int len;
+	
+	if (!s)
+		s = "(null)";
+
+	len = _strlen(s) - 1;
+
+	while (len >= 0)
+	{
+		_putchar(s[len]);
+		len--;
+		i++;
+	}
+	
+	return (len);
+}
+
 
 
