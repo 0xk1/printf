@@ -65,6 +65,8 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			count = helper(*format, args, count);
+			if (count == -1)
+				return (-1);
 		}
 		else
 		{
