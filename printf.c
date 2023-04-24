@@ -34,8 +34,6 @@ int helper(char c, va_list args, int count)
 	case 'X':
 		count += dec_to_base(va_arg(args, unsigned int), c);
 		break;
-	case '\0':
-		return (-1);
 	default:
 		count += _putchar('%');
 		count += _putchar(c);
