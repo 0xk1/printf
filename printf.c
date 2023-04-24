@@ -38,11 +38,6 @@ int helper(char c, va_list args, int count)
 	case 'p':
 		count += print_pointer(va_arg(args, void *));
 		break;
-	/**
-	  *case 'r':
-		count += _rev_str(va_arg(args, char*));
-		break;
-		*/
 	default:
 		count += _putchar('%');
 		count += _putchar(c);
