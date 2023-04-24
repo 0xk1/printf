@@ -90,7 +90,7 @@ int _rev_str(char *s)
 {
 	int i = 0;
 	int len;
-	
+
 	if (!s)
 		s = "(null)";
 
@@ -102,9 +102,8 @@ int _rev_str(char *s)
 		len--;
 		i++;
 	}
-	
-	return (len);
-}
 
+	return (i++);
+}
 
 
