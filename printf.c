@@ -25,18 +25,14 @@ int helper(char c, va_list args, int count)
 	case 'i':
 		count += print_int(va_arg(args, int));
 		break;
-	case 'b':
-		count += print_binary(va_arg(args, int));
-		break;
 	case 'u':
 		count += print_unsd(va_arg(args, unsigned int));
 		break;
+	case 'b':
 	case 'o':
-		count += print_octal(va_arg(args, unsigned int));
-		break;
 	case 'x':
 	case 'X':
-		count += print_hex(va_arg(args, unsigned int), c);
+		count += dec_to_base(va_arg(args, unsigned int), c);
 		break;
 	case '\0':
 		return (-1);
