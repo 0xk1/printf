@@ -34,16 +34,17 @@ int is_printable(char c)
 int _puts(char *s)
 {
 	int i = 0;
-	int j = 0;
 
-	while (s == NULL)
-		s = "(null)";
-
-	while (s[j] != '\0')
-		j++;
-
-	for (i = j - 1; i >= 0; i--)
+	if (!s)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
+	while (s[i])
+	{
 		_putchar(s[i]);
+		i++;
+	}
 	return (j);
 }
 
