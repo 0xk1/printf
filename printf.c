@@ -19,7 +19,7 @@ int helper(char c, va_list args, int count)
 		count += _puts(va_arg(args, char*));
 		break;
 	case '%':
-		count += _putchar(c);
+		count += _putchar('%');
 		break;
 	case 'd':
 	case 'i':
