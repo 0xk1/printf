@@ -84,7 +84,6 @@ int print_int(int n)
  * @n: number
  * Return: number of bytes written
  */
-
 int print_unsd(unsigned int n)
 {
 	int i = 0;
@@ -98,6 +97,5 @@ int print_unsd(unsigned int n)
 	}
 	return (i);
 }
-
 
 
