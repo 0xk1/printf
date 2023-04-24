@@ -107,8 +107,11 @@ int print_binary(unsigned int n)
 int print_unsd(unsigned int n)
 {
 	int i = 0;
-
-	if (n <= 9)
+	
+	if (n == 0)
+		i += _putchar('0');
+		
+	else if (n <= 9)
 		i += _putchar(n + '0');
 	else
 	{

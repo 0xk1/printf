@@ -5,7 +5,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-
 int _putchar(char c);
 int _puts(char *s);
 int print_int(int n);
