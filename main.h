@@ -13,5 +13,6 @@ int helper(char c, va_list args, int count);
 int print_unsd(unsigned int n);
 int _strlen(char *s);
 int dec_to_base(unsigned int n, char base);
+int is_printable(char c);
 
 #endif

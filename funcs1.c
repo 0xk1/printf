@@ -12,6 +12,20 @@ int _putchar (char c)
 }
 
 /**
+ * is_printable - check if char is printable
+ * @c: char
+ * Return: -1 or c
+ */
+
+int is_printable(char c)
+{
+	if (c >= 32 && c < 127)
+		return (-1);
+	return (c);
+}
+
+
+/**
  * _puts - write string
  * @s: string to write
  * Return: number of char written
@@ -20,17 +34,29 @@ int _putchar (char c)
 int _puts(char *s)
 {
 	int i = 0;
-	int len = 0;
+	int j, len;
 
 	if (!s)
 	{
 		write(1, "(null)", 6);
 		return (6);
 	}
-	while (s[i] && s)
+	while (s[i])
 	{
-		len += _putchar(s[i]);
+		j = is_printable(s[i]);
+		if (j == -1)
+			_putchar(s[i]);	
+		else
+		{
+			_puts("\\x");
+			if (j <= 15)
+				_putchar('0');
+			dec_to_base(j, 'X');
+
+			len += 2;
+		}
 		i++;
+		len++;
 	}
 	return (len);
 }

@@ -16,6 +16,7 @@ int helper(char c, va_list args, int count)
 		count += _putchar((char)va_arg(args, int));
 		break;
 	case 's':
+	case 'S':
 		count += _puts(va_arg(args, char*));
 		break;
 	case '%':

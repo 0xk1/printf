@@ -19,6 +19,10 @@ int main(void)
 	_printf("Length:[%d, %i]\n", len, len);
 	ui = (unsigned int)INT_MAX + 1024;
 	_printf("%c\n", 'H');
+	len = _printf("%S\n", "BestçSchool");
+	len2 = printf("%S\n", "Best\nSchool");
+	_printf("Len:[%d]\n", len);
+	printf("Len:[%d]\n", len2);
 	_printf("%c\n", 65);
 	_printf("%c\n", '\n');
 	_printf("%s\n", "Hello, world!");
