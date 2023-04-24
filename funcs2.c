@@ -50,7 +50,12 @@ int print_octal(unsigned int n)
 	return (i);
 }
 
-
+/**
+ * print_hex - print hex
+ * @n: number
+ * @base: base
+ * Return: int
+ */
 int print_hex(unsigned int n, char base)
 {
 	int i = 0, j, r;
@@ -58,6 +63,11 @@ int print_hex(unsigned int n, char base)
 	char *hex_s = "0123456789abcdef";
 	char *hex_b = "0123456789ABCDEF";
 
+	if (n == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	while (n)
 	{
 		r = n % 16;
