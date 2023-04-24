@@ -13,8 +13,8 @@ int main(void)
 	int len2;
 	unsigned int ui;
 
-	len = _printf("Let's tyr to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
+	len = _printf("Let's %% %c tyr to printf a simple sentence.\n", "\0");
+	len2 = printf("Let's %% %c try to printf a simple sentence.\n", "\0");
 	_printf("Length:[%d, %i]\n", len, len);
 	ui = (unsigned int)INT_MAX + 1024;
 

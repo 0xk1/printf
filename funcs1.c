@@ -20,18 +20,19 @@ int _putchar (char c)
 int _puts(char *s)
 {
 	int i = 0;
+	int len = 0;
 
 	if (!s)
 	{
 		write(1, "(null)", 6);
 		return (6);
 	}
-	while (s[i])
+	while (s[i] && s)
 	{
-		_putchar(s[i]);
+		len += _putchar(s[i]);
 		i++;
 	}
-	return (i);
+	return (len);
 }
 
 
