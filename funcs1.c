@@ -65,38 +65,6 @@ int print_int(int n)
 	return (i);
 
 }
-/**
- * print_binary - function that print the binary of a decimal
- * @n: the number
- * Return: number of bytes written
- */
-
-int print_binary(unsigned int n)
-{
-	int i = 0, j, r;
-	char arr[64];
-
-	if (n == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
-	while (n)
-	{
-		r = n % 2;
-		n = n / 2;
-		arr[i] = r;
-		i++;
-	}
-
-	j = i - 1;
-	while (j >= 0)
-	{
-		_putchar(arr[j] + '0');
-		j--;
-	}
-	return (i);
-}
 
 /**
  * print_unsd - print unsigned number
