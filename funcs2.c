@@ -85,6 +85,11 @@ int print_pointer(void *p)
 	i += dec_to_base(n, 'x');
 	return (i);
 }
+/**
+ * _rev_str - reverse string
+ * @s: pointer to string
+ * Return: reversed string
+ */
 
 int _rev_str(char *s)
 {
