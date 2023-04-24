@@ -14,5 +14,6 @@ int print_unsd(unsigned int n);
 int _strlen(char *s);
 int dec_to_base(unsigned int n, char base);
 int is_printable(char c);
+int print_pointer(void *p);
 
 #endif

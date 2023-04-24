@@ -12,27 +12,18 @@ int main(void)
 	int len;
 	int len2;
 	unsigned int ui;
-	char *str = "dynamic string";
+	void *addr;
 
 	len = _printf("Let's %% %c \' tyr to printf a simple sentence.\n", "\0");
 	len2 = printf("Let's %% %c \' try to printf a simple sentence.\n", "\0");
 	_printf("Length:[%d, %i]\n", len, len);
 	ui = (unsigned int)INT_MAX + 1024;
+	addr = (void *)0x7ffe637541f0;
 	_printf("%c\n", 'H');
 	len = _printf("%S\n", "BestçSchool");
 	len2 = printf("%S\n", "Best\nSchool");
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
-	_printf("%c\n", 65);
-	_printf("%c\n", '\n');
-	_printf("%s\n", "Hello, world!");
-	_printf("%s\n", "This is a test.");
-	_printf("%s\n", str);
-	_printf("%%\n");
-	_printf("%%%\n");
-	_printf("%c%s%%\n", 'H', "ello, world!");
-	_printf("%s\n", NULL);
-	_printf("%s\n", NULL);
 	printf("Length:[%d, %i]\n", len2, len2);
 	_printf("Negative:[%d]\n", -762534);
 	printf("Negative:[%d]\n", -762534);
@@ -43,6 +34,8 @@ int main(void)
 	_printf("Unsigned octal:[%o]\n", ui);
 	printf("Unsigned octal:[%o]\n", ui);
 	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+	_printf("Address:[%p]\n", addr);
+	printf("Address:[%p]\n", addr);
 	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');

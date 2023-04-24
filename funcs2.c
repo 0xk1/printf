@@ -63,23 +63,28 @@ int dec_to_base(unsigned int n, char base)
 	return (i);
 }
 
+/**
+ * print_pointer - function that print ponter
+ * @p: ponter
+ * Return: number of bytes written
+ */
 
+int print_pointer(void *p)
+{
+	int i = 0;
+	long int n;
 
+	if (!p)
+	{
+		i += _puts("(nil)");
+		return (i);
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	n = (unsigned long int)p;
+	i += _puts("0x");
+	i += dec_to_base(n, 'X');
+	return (i);
+}
 
 
 
