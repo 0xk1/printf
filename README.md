@@ -46,14 +46,14 @@ In this project, we will be implementing a simplified version of printf, which s
 
 To get started with this project, you should clone the project repository from GitHub:
 
-***git clone https://github.com/0xk1/printf.git***
+- git clone https://github.com/0xk1/printf.git
 
 Once you have cloned the repository, you can begin implementing the required functions in the printf.c file. You can test your implementation using the provided main.c file, which contains some basic test cases.
 
 To compile and run the test cases, you can use the following commands:
 
-***gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
-./printf***
+- gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
+- ./printf
 
 # Contributions
 
