@@ -2,8 +2,8 @@
 
 /**
  * _strlen - len of string
- * @s: string
- * Return: int
+ * @s: string will be operated
+ * Return: int number of characters
  */
 
 int _strlen(char *s)
