@@ -85,14 +85,14 @@ int print_int(int n)
  */
 int print_unsd(unsigned int n)
 {
-	int i = 0;
+	int index = 0;
 
 	if (n <= 9)
-		i += _putchar(n + '0');
+		index += _putchar(n + '0');
 	else
 	{
-		i += print_unsd(n / 10);
-		i += print_unsd(n % 10);
+		index += print_unsd(n / 10);
+		index += print_unsd(n % 10);
 	}
 	return (i);
 }
