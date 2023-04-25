@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - write a single char
+ * _putchar - function that write a single char
  * @c: char to write
  * Return: number of bytes written
  */
@@ -10,7 +10,7 @@ int _putchar (char c)
 	return (write(1, &c, 1));
 }
 /**
- * is_printable - check if char is printable
+ * is_printable - function that check if char is printable
  * @c: char
  * Return: -1 or c
  */
