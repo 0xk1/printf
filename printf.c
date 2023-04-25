@@ -7,6 +7,7 @@
  * @count: the current character count
  * Return: the updated character count
  */
+
 int helper(char c, va_list args, int count)
 {
 	switch (c)
