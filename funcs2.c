@@ -16,7 +16,7 @@ int _strlen(char *s)
 }
 
 /**
- * dec_to_base - print hex
+ * dec_to_base - function that print hex
  * @n: number
  * @base: base
  * Return: int
