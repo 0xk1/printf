@@ -19,9 +19,9 @@ int is_printable(char c)
 {
 	if (c >= 32 && c < 127)
 	{
-		return (-1);
+		return (1);
 	}
-	return (c);
+	return (0);
 }
 
 
@@ -33,19 +33,33 @@ int is_printable(char c)
 
 int _puts(char *s)
 {
-	int index = 0;
+	int i = 0;
+	int len = 0;
 
 	if (!s)
 	{
 		write(1, "(null)", 6);
 		return (6);
 	}
-	while (s[index])
+
+	while (s[i])
 	{
-		_putchar(s[index]);
-		index++;
+		if (is_printable(s[i]))
+		{
+			_putchar(s[i]);
+			len++;
+		}
+		else
+		{
+			len += _puts("\\x");
+			if (s[i] <= 15)
+				len += _putchar('0');
+			len += dec_to_base(s[i], 'X');
+		}
+		i++;
+
 	}
-	return (index);
+	return (len);
 }
 
 
