@@ -32,7 +32,7 @@ In this project, we will be implementing a simplified version of printf, which s
 - Don’t forget to push your header file
 - All your header files should be include guarded
 
-## Authorized functions and macros
+# Authorized functions and macros
 
 - write (man 2 write)
 - malloc (man 3 malloc)
