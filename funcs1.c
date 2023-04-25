@@ -31,19 +31,19 @@ int is_printable(char c)
 
 int _puts(char *s)
 {
-	int i = 0;
+	int index = 0;
 
 	if (!s)
 	{
 		write(1, "(null)", 6);
 		return (6);
 	}
-	while (s[i])
+	while (s[index])
 	{
-		_putchar(s[i]);
-		i++;
+		_putchar(s[index]);
+		index++;
 	}
-	return (i);
+	return (index);
 }
 
 
