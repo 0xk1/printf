@@ -1,8 +1,8 @@
-#ALX printf Project
+# ALX printf Project
 
 This project is part of the ALX software engineering program. The goal of this project is to implement a simplified version of the standard C library printf function, which allows formatted printing of text to the standard output.
 
-#Project Overview
+# Project Overview
 The printf function takes a format string and a variable number of arguments, and prints the formatted text to the standard output. The format string can contain format specifiers, which start with the % character, and specify how each argument should be formatted and printed.
 
 In this project, we will be implementing a simplified version of printf, which supports the following format specifiers:
@@ -18,7 +18,7 @@ In this project, we will be implementing a simplified version of printf, which s
 %r - print a reversed string
 %R - print a string in rot13
 
-#Project Requirements
+# Project Requirements
 
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -32,7 +32,7 @@ The prototypes of all your functions should be included in your header file call
 Don’t forget to push your header file
 All your header files should be include guarded
 
-#Authorized functions and macros
+## Authorized functions and macros
 
 write (man 2 write)
 malloc (man 3 malloc)
@@ -42,20 +42,20 @@ va_end (man 3 va_end)
 va_copy (man 3 va_copy)
 va_arg (man 3 va_arg)
 
-#Getting Started
+# Getting Started
 
 To get started with this project, you should clone the project repository from GitHub:
 
-$ git clone https://github.com/0xk1/printf.git
+***git clone https://github.com/0xk1/printf.git***
 
 Once you have cloned the repository, you can begin implementing the required functions in the printf.c file. You can test your implementation using the provided main.c file, which contains some basic test cases.
 
 To compile and run the test cases, you can use the following commands:
 
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
-./printf
+***gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c -o printf
+./printf***
 
-#Contributions
+# Contributions
 
 This project is open to contributions from the ALX community. If you find a bug, or have a suggestion for an improvement, please create an issue on GitHub or submit a pull request with your changes.
 
