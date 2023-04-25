@@ -5,10 +5,12 @@
  * @c: char to write
  * Return: number of bytes written
  */
+
 int _putchar (char c)
 {
 	return (write(1, &c, 1));
 }
+
 /**
  * is_printable - function that check if char is printable
  * @c: char
@@ -68,6 +70,7 @@ int _puts(char *s)
  * @n: number to write
  * Return: number of bytes written
  */
+
 int print_int(int n)
 {
 	int i = 0;
@@ -99,6 +102,7 @@ int print_int(int n)
  * @n: number will be printed
  * Return: number of bytes written
  */
+
 int print_unsd(unsigned int n)
 {
 	int index = 0;
@@ -112,5 +116,3 @@ int print_unsd(unsigned int n)
 	}
 	return (index);
 }
-
-
