@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - write a single char
+ * _putchar - function that write a single char
  * @c: char to write
  * Return: number of bytes written
  */
@@ -10,7 +10,7 @@ int _putchar (char c)
 	return (write(1, &c, 1));
 }
 /**
- * is_printable - check if char is printable
+ * is_printable - function that check if char is printable
  * @c: char
  * Return: -1 or c
  */
@@ -18,7 +18,9 @@ int _putchar (char c)
 int is_printable(char c)
 {
 	if (c >= 32 && c < 127)
+	{
 		return (-1);
+	}
 	return (c);
 }
 
@@ -31,24 +33,24 @@ int is_printable(char c)
 
 int _puts(char *s)
 {
-	int i = 0;
+	int index = 0;
 
 	if (!s)
 	{
 		write(1, "(null)", 6);
 		return (6);
 	}
-	while (s[i])
+	while (s[index])
 	{
-		_putchar(s[i]);
-		i++;
+		_putchar(s[index]);
+		index++;
 	}
-	return (i);
+	return (index);
 }
 
 
 /**
- * print_int - print a number
+ * print_int - function that print a number
  * @n: number to write
  * Return: number of bytes written
  */
@@ -79,20 +81,20 @@ int print_int(int n)
 }
 
 /**
- * print_unsd - print unsigned number
- * @n: number
+ * print_unsd - function that print unsigned number
+ * @n: number will be printed
  * Return: number of bytes written
  */
 int print_unsd(unsigned int n)
 {
-	int i = 0;
+	int index = 0;
 
 	if (n <= 9)
-		i += _putchar(n + '0');
+		index += _putchar(n + '0');
 	else
 	{
-		i += print_unsd(n / 10);
-		i += print_unsd(n % 10);
+		index += print_unsd(n / 10);
+		index += print_unsd(n % 10);
 	}
 	return (i);
 }

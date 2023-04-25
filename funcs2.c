@@ -2,8 +2,8 @@
 
 /**
  * _strlen - len of string
- * @s: string
- * Return: int
+ * @s: string will be operated
+ * Return: int number of characters
  */
 
 int _strlen(char *s)
@@ -16,7 +16,7 @@ int _strlen(char *s)
 }
 
 /**
- * dec_to_base - print hex
+ * dec_to_base - function that print hex
  * @n: number
  * @base: base
  * Return: int
@@ -71,19 +71,19 @@ int dec_to_base(unsigned long int n, char base)
 
 int print_pointer(void *p)
 {
-	int i = 0;
+	int index = 0;
 	long int n;
 
 	if (!p)
 	{
-		i += _puts("(nil)");
-		return (i);
+		index += _puts("(nil)");
+		return (index);
 	}
 
 	n = (unsigned long int)p;
-	i += _puts("0x");
-	i += dec_to_base(n, 'x');
-	return (i);
+	index += _puts("0x");
+	index += dec_to_base(n, 'x');
+	return (index);
 }
 
 /**
