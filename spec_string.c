@@ -11,9 +11,7 @@ int spec_string(char *s)
 	int len = 0;
 
 	if (!s)
-	{
 		return (_puts("(null)"));
-	}
 
 	while (s[i])
 	{
@@ -25,7 +23,7 @@ int spec_string(char *s)
 		else
 		{
 			len += _puts("\\x");
-			if (s[i] <= 5)
+			if (s[i] <= 15)
 				len += _putchar('0');
 			len += dec_to_base(s[i], 'X');
 		}
