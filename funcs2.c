@@ -21,6 +21,7 @@ int _strlen(char *s)
  * @base: base
  * Return: int
  */
+
 int dec_to_base(unsigned long int n, char base)
 {
 	int i = 0, j, r;
@@ -144,11 +145,6 @@ int rot13(char *s)
 
 		s++;
 	}
+
 	return (i);
 }
-
-
-
-
-
-
