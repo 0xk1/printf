@@ -12,6 +12,8 @@ int helper(char c, va_list args, int count)
 		count += _putchar((char)va_arg(args, int));
 	else if (c == 's')
 		count += _puts(va_arg(args, char*));
+	else if (c == 'S')
+		count += spec_string(va_arg(args, char *));
 	else if (c == '%')
 		count += _putchar('%');
 	else if (c == 'd' || c == 'i')
