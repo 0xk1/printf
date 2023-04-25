@@ -2,7 +2,7 @@
 
 /**
  * spec_string - handle non printable chars
- * @s: string
+ * @s: string will be operated
  * Return: number of bytes written
  */
 int spec_string(char *s)
