@@ -48,7 +48,7 @@ int _puts(char *s)
 
 
 /**
- * print_int - print a number
+ * print_int - function that print a number
  * @n: number to write
  * Return: number of bytes written
  */
