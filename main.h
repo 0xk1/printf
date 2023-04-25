@@ -16,5 +16,6 @@ int dec_to_base(unsigned long int n, char base);
 int is_printable(char c);
 int print_pointer(void *p);
 int _rev_str(char *s);
+int rot13(char *s);
 
 #endif

@@ -111,3 +111,44 @@ int _rev_str(char *s)
 
 	return (i++);
 }
+
+/**
+ * rot13 - rot13
+ * @s: string
+ * Return: number of bytes written
+ */
+
+int rot13(char *s)
+{
+	int i = 0;
+
+	if (!s)
+	{
+		_puts("(null)");
+		return (6);
+	}
+
+	while (*s)
+	{
+		if ((*s >= 65 && *s <= 90) || (*s >= 97 && *s <= 122))
+		{
+			if (*s <= 77 || *s <= 109)
+				i += _putchar(*s + 13);
+			else
+				i += _putchar(*s - 13);
+		}
+		else
+		{
+			i += _putchar(*s);
+		}
+
+		s++;
+	}
+	return (i);
+}
+
+
+
+
+
+

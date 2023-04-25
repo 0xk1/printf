@@ -9,7 +9,6 @@
  */
 int helper(char c, va_list args, int count)
 {
-
 	switch (c)
 	{
 	case 'c':
@@ -40,6 +39,9 @@ int helper(char c, va_list args, int count)
 		break;
 	case 'r':
 		count += _rev_str(va_arg(args, void *));
+		break;
+	case 'R':
+		count += rot13(va_arg(args, char *));
 		break;
 	default:
 		count += _putchar('%');
