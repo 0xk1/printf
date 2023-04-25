@@ -51,7 +51,7 @@ int helper(char c, va_list args, int count)
 
 /**
  * _printf - function that printed a formatted string to standart output
- * @format: the printf format string to use
+ * @format: format will be printed
  * Return: total number of characters printed
  */
 
