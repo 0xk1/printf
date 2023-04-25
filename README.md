@@ -7,16 +7,16 @@ The printf function takes a format string and a variable number of arguments, an
 
 In this project, we will be implementing a simplified version of printf, which supports the following format specifiers:
 
-%c - print a single character
-%s - print a null-terminated string
-%d - print a signed decimal integer
-%i - print a signed decimal integer (same as %d)
-%u - print an unsigned decimal integer
-%x - print an unsigned hexadecimal integer (lowercase)
-%X - print an unsigned hexadecimal integer (uppercase)
-%% - print a literal % character
-%r - print a reversed string
-%R - print a string in rot13
+- %c - print a single character
+- %s - print a null-terminated string
+- %d - print a signed decimal integer
+- %i - print a signed decimal integer (same as %d)
+- %u - print an unsigned decimal integer
+- %x - print an unsigned hexadecimal integer (lowercase)
+- %X - print an unsigned hexadecimal integer (uppercase)
+- %% - print a literal % character
+- %r - print a reversed string
+- %R - print a string in rot13
 
 # Project Requirements
 
@@ -34,13 +34,13 @@ In this project, we will be implementing a simplified version of printf, which s
 
 ## Authorized functions and macros
 
-write (man 2 write)
-malloc (man 3 malloc)
-free (man 3 free)
-va_start (man 3 va_start)
-va_end (man 3 va_end)
-va_copy (man 3 va_copy)
-va_arg (man 3 va_arg)
+- write (man 2 write)
+- malloc (man 3 malloc)
+- free (man 3 free)
+- va_start (man 3 va_start)
+- va_end (man 3 va_end)
+- va_copy (man 3 va_copy)
+- va_arg (man 3 va_arg)
 
 # Getting Started
 
