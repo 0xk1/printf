@@ -8,44 +8,28 @@
  */
 int helper(char c, va_list args, int count)
 {
-	switch (c)
-	{
-	case 'c':
+	if (c == 'c')
 		count += _putchar((char)va_arg(args, int));
-		break;
-	case 's':
-	case 'S':
+	else if (c == 's')
 		count += _puts(va_arg(args, char*));
-		break;
-	case '%':
+	else if (c == '%')
 		count += _putchar('%');
-		break;
-	case 'd':
-	case 'i':
+	else if (c == 'd' || c == 'i')
 		count += print_int(va_arg(args, int));
-		break;
-	case 'u':
+	else if (c == 'u')
 		count += print_unsd(va_arg(args, unsigned int));
-		break;
-	case 'b':
-	case 'o':
-	case 'x':
-	case 'X':
+	else if (c == 'b' || c == 'o' || c == 'x' || c == 'X')
 		count += dec_to_base(va_arg(args, unsigned int), c);
-		break;
-	case 'p':
+	else if (c == 'p')
 		count += print_pointer(va_arg(args, void *));
-		break;
-	case 'r':
+	else if (c == 'r')
 		count += _rev_str(va_arg(args, void *));
-		break;
-	case 'R':
+	else if (c == 'R')
 		count += rot13(va_arg(args, char *));
-		break;
-	default:
+	else
+	{
 		count += _putchar('%');
 		count += _putchar(c);
-		break;
 	}
 	return (count);
 }
