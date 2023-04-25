@@ -96,7 +96,7 @@ int print_unsd(unsigned int n)
 		index += print_unsd(n / 10);
 		index += print_unsd(n % 10);
 	}
-	return (i);
+	return (index);
 }
 
 
