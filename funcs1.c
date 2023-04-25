@@ -36,7 +36,6 @@ int is_printable(char c)
 int _puts(char *s)
 {
 	int i = 0;
-	int len = 0;
 
 	if (!s)
 	{
@@ -46,22 +45,10 @@ int _puts(char *s)
 
 	while (s[i])
 	{
-		if (is_printable(s[i]))
-		{
-			_putchar(s[i]);
-			len++;
-		}
-		else
-		{
-			len += _puts("\\x");
-			if (s[i] <= 15)
-				len += _putchar('0');
-			len += dec_to_base(s[i], 'X');
-		}
+		_putchar(s[i]);
 		i++;
-
 	}
-	return (len);
+	return (i);
 }
 
 
