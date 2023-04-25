@@ -79,8 +79,8 @@ int print_int(int n)
 }
 
 /**
- * print_unsd - print unsigned number
- * @n: number
+ * print_unsd - function that print unsigned number
+ * @n: number will be printed
  * Return: number of bytes written
  */
 int print_unsd(unsigned int n)
