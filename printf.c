@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * helper - process a single conversion specifier in the printf format string
  * @c: the conversion specifier character
@@ -6,6 +7,7 @@
  * @count: the current character count
  * Return: the updated character count
  */
+
 int helper(char c, va_list args, int count)
 {
 	if (c == 'c')
@@ -35,11 +37,13 @@ int helper(char c, va_list args, int count)
 	}
 	return (count);
 }
+
 /**
  * _printf - function that printed a formatted string to standart output
  * @format: format will be printed
  * Return: total number of characters printed
  */
+
 int _printf(const char *format, ...)
 {
 	va_list args;
